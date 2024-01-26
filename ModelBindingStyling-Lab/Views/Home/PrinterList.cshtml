@@ -4,48 +4,136 @@
     ViewData["Title"] = "Printer List";
 }
 
-<h1>PrinterList</h1>
+<h1>Printers On Sale</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SKU)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BuildVolume)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrinterImage)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SKU)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BuildVolume)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrinterImage)
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>The Mini Printer</h5>
+                        <p><del>$600.99</del> $499.99</p>
+                        <br />
+                        <p>SMLPRINTER7</p>       
+                        <p>180 x 180 x 180 mm</p> 
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Mega Printer</h5>
+                        <p><del>$1200.99</del> $899.99</p>
+                        <br />
+                        <p>MEDPRINTER12</p>
+                        <p>300 x 300 x 300 mm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Mega Printer Plus</h5>
+                        <p><del>$1500.99</del> $999.99</p>
+                        <br />
+                        <p>MEDPRINTER12P</p>
+                        <p>360 x 360 x 360 mm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Mega Printer</h5>
+                        <p><del>$1100.99</del> $899.99</p>
+                        <br />
+                        <p>GIGANTOR10</p>
+                        <p>360 x 360 x 500 mm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>3D Printer</h5>
+                        <p><del>$1000.99</del> $777.99</p>
+                        <br />
+                        <p>SDLLRIYTER3</p>
+                        <p>120 x 120 x 100 mm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>HP Laser Printer</h5>
+                        <p><del>$1700.99</del> $1100.99</p>
+                        <br />
+                        <p>SHPLPRINTER7</p>
+                        <p>200 x 180 x 190 mm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>LexMark Mini Printer</h5>
+                        <p><del>$600.99</del> $499.99</p>
+                        <br />
+                        <p>SMLPRIFDFDSNTER7</p>
+                        <p>120 x 150 x 180 mm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Epsom Printer</h5>
+                        <p><del>$900.99</del> $799.99</p>
+                        <br />
+                        <p>SEPSMPRINTER7</p>
+                        <p>190 x 120 x 140 mm</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 27rem;">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Canon Mini Printer</h5>
+                        <p><del>$400.99</del> $299.99</p>
+                        <br />
+                        <p>SMCANNLPRINTER7</p>
+                        <p>160 x 120 x 120 mm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<style>
+    p{
+        color:black;
+        text-align:center;
+    }
+    h5{
+        color:black;
+        text-align: center;
+    }
+    button{
+        color:black;
+    }
+</style>
