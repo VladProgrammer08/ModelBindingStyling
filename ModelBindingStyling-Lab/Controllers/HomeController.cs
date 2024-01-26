@@ -78,14 +78,14 @@ namespace ModelBindingStyling_Lab.Controllers
         {
             return new UserProfile()
             {
-                DateOfBirth = new DateOnly(1815, 7, 1),
-                Email = "First.Programmer@gmail.com",
-                FullName = "Ada Lovelace",
+                DateOfBirth = new DateOnly(1999, 9, 9),
+                Email = "tom003.programmer@gmail.com",
+                FullName = "Tom Smith",
                 GitHubUrl = "https://github.com/Octocat",
                 ImageUrl = "https://placehold.co/150",
-                PhoneNumber = "(253) 555-1234",
-                UserProfileId = 10,
-                SkilledLanguages = new List<string> { "C#", "Java", "C++" }
+                PhoneNumber = "(253) 555-0887",
+                UserProfileId = 1,
+                SkilledLanguages = new List<string> { "C#", "Java", "C++", "Python" }
             };
         }
 
